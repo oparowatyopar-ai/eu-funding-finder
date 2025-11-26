@@ -2,10 +2,11 @@
   "name": "server",
   "version": "1.0.0",
   "main": "app.ts",
-  "scripts": {
-    "build": "tsc app.ts --outDir dist",
-    "start": "node dist/app.js"
-  },
+"scripts": {
+  "build": "tsc app.ts --outDir dist",
+  "start": "node dist/app.js",
+  "dev": "ts-node-esm app.ts"
+}
   "dependencies": {
     "express": "^4.19.2",
     "nodemailer": "^6.9.12",
