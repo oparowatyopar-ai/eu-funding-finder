@@ -1,17 +1,13 @@
 {
   "name": "server",
   "version": "1.0.0",
-  "main": "app.ts",
-  "type": "module",
+  "main": "app.js",
   "scripts": {
-    "build": "tsc app.ts --outDir dist",
-    "start": "node dist/app.js",
-    "dev": "ts-node-esm app.ts"
+    "start": "node app.js"
   },
   "dependencies": {
     "express": "^4.19.2",
-    "nodemailer": "^6.9.12",
-    "ts-node": "^10.9.2",
-    "typescript": "^5.4.5"
+    "cors": "^2.8.5",
+    "nodemailer": "^6.9.12"
   }
 }
