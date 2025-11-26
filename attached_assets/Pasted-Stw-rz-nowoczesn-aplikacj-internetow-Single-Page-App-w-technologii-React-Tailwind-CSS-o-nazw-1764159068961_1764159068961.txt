@@ -1,0 +1,90 @@
+Stwórz nowoczesną aplikację internetową (Single Page App) w technologii React + Tailwind CSS, o nazwie „EU Funding Finder”.
+Cała aplikacja ma być po polsku.
+
+⸻
+
+🎨 Wygląd ogólny:
+	•	Styl nowoczesny i przejrzysty: tło w jasnych odcieniach (gradient niebiesko-biały), zaokrąglone rogi, cienie, delikatne animacje.
+	•	Całość ma wyglądać profesjonalnie, w stylu europejskich projektów (niebieski + żółty motyw UE).
+	•	Ma działać zarówno na komputerze, jak i na telefonie (responsywna).
+
+⸻
+
+🧭 Nagłówek:
+	•	Tekst: „EU Funding Finder”
+	•	Mały akcent w kolorach UE (niebieski + żółty).
+
+⸻
+
+💰 Sekcja ofert finansowania:
+	•	Tytuł sekcji: „Dostępne programy finansowania”
+	•	Poniżej wyświetl 6 kart ofert (2 kolumny na komputerze, 1 kolumna na telefonie).
+	•	Każda karta ma zawierać:
+	•	Tytuł oferty
+	•	Krótki opis
+	•	Listę tagów (3–4 słowa, np. „Dotacja”, „Pożyczka”, „UE”)
+	•	Przycisk „Skontaktuj się z doradcą”, który po kliknięciu pokaże sekcję doradcy poniżej.
+
+Przykładowe oferty:
+1️⃣ Pożyczka dla MŚP – oprocentowanie 2%
+Opis: Krótkoterminowe wsparcie inwestycyjne dla małych i średnich przedsiębiorstw.
+Tagi: Pożyczka, UE, Rozwój
+
+2️⃣ Dotacja na rozwój e-commerce – do 70% bezzwrotna
+Opis: Program wspierający firmy inwestujące w digitalizację i sprzedaż online.
+Tagi: Dotacja, Cyfryzacja, UE
+
+3️⃣ Wsparcie na innowacje – do 85% dofinansowania
+Opis: Fundusze na badania, rozwój i wdrożenie nowych technologii.
+Tagi: Innowacje, B+R, Dotacja
+
+4️⃣ Zielona transformacja – pożyczka 1,5%
+Opis: Finansowanie projektów ekologicznych, OZE i modernizacji energetycznej.
+Tagi: Ekologia, OZE, Pożyczka
+
+5️⃣ Dotacja na szkolenia pracowników – 100% zwrotu
+Opis: Dofinansowanie szkoleń i podnoszenia kwalifikacji pracowników.
+Tagi: Szkolenia, Kadry, Dotacja
+
+6️⃣ Kredyt technologiczny – 3% rocznie
+Opis: Finansowanie zakupu maszyn, urządzeń i nowoczesnych technologii.
+Tagi: Technologia, Kredyt, Produkcja
+
+⸻
+
+👨‍💼 Sekcja doradców:
+
+Po kliknięciu przycisku „Skontaktuj się z doradcą” na dowolnej karcie:
+	•	Ma się pojawić losowo jeden z dwóch doradców:
+
+🧔 Doradca 1: Adriano Orkisz
+	•	Stanowisko: „Senior Advisor ds. finansowania UE”
+	•	Zdjęcie: https://i.imgur.com/rqr6gpm.png￼
+	•	Opis: „Pomogę Ci dobrać najlepszy program i przygotować dokumenty, żeby kasa z Unii przyszła jak najszybciej 💸”
+
+👨 Doradca 2: Krystian Skowroński
+	•	Stanowisko: „Doradca ds. projektów europejskich”
+	•	Brak zdjęcia – pokaż inicjały „KS” w kółku (avatar tekstowy).
+	•	Opis: „Pomogę w szybkiej analizie Twojej sytuacji i dopasowaniu odpowiedniego programu finansowania.”
+
+⸻
+
+💬 Karta doradcy:
+	•	Po wylosowaniu doradcy pokaż jego imię, nazwisko, stanowisko, zdjęcie (lub avatar z inicjałami) i opis.
+	•	Poniżej dwa przyciski obok siebie:
+	•	💬 Porozmawiaj z doradcą (symuluje otwarcie czatu)
+	•	📎 Wyślij dokumenty (symuluje przekierowanie do formularza)
+	•	Wszystko ma być ładnie wyśrodkowane i animowane (fade-in, slide-up).
+
+⸻
+
+⚙️ Dodatki:
+	•	Każde kliknięcie przycisku „Skontaktuj się z doradcą” powinno losowo pokazywać Adriano lub Krystiana.
+	•	Całość ma działać lokalnie (bez backendu, tylko React).
+	•	Dodaj delikatny efekt pojawiania się kart przy scrollowaniu.
+
+⸻
+
+🧾 Stopka:
+	•	Na dole strony ma być napis:
+„© 2025 Imperador Solutions 

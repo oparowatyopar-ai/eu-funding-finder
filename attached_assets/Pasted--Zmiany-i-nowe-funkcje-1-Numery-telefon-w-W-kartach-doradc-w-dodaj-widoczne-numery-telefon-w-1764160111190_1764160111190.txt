@@ -1,0 +1,60 @@
+🧩 Zmiany i nowe funkcje:
+
+1. Numery telefonów
+	•	W kartach doradców dodaj widoczne numery telefonów:
+	•	Adriano Orkisz: 455 514 518
+	•	Krystian Skowroński: 455 514 326
+	•	Przycisk „Porozmawiaj z doradcą” ma otwierać okno z numerem i linkiem tel: (po kliknięciu uruchamia połączenie).
+
+⸻
+
+2. Formularz „Wyślij dokumenty”
+	•	Po kliknięciu przycisku „Wyślij dokumenty” otwórz modal z formularzem zawierającym:
+	•	wybór formy prawnej (radio lub dropdown):
+	•	Jednoosobowa działalność gospodarcza
+	•	Spółka z o.o.
+	•	Spółka komandytowa
+	•	Spółka jawna
+	•	Spółka partnerska
+	•	Spółka cywilna
+	•	Ryczałt
+	•	dynamiczną listę wymaganych dokumentów (checkboxy z możliwością dodania plików):
+	•	JDG: PIT 2023, PIT 2024, KPIR 2023, KPIR 2024, bieżące 2025
+	•	Spółka z o.o. / komandytowa: RZiS 2023–2025, CIT 2023–2024, Bilans 2023–2025
+	•	Ryczałt: PIT 2023–2025, Ewidencja Przychodów 2023–2024
+	•	Tabela amortyzacyjna: 2023–2025 (dodatkowa opcja)
+	•	VAT-owiec: deklaracja VAT-7 2023–2025 + podsumowanie wynagrodzeń 2023–2025
+	•	Spółki jawne/partnerskie/cywilne: jeśli KPiR → pokazuj KPiR; jeśli pełna księgowość → RZiS.
+	•	możliwość uploadu kilku plików (multi-file, pdf/jpg/png/xls/xlsx, max 20 plików / 50 MB łącznie).
+	•	pole tekstowe „Uwagi / dodatkowe informacje”.
+
+⸻
+
+3. Zgody i polityka prywatności
+Na końcu formularza dodaj obowiązkowe checkboxy (z tekstem po polsku):
+	•	✅ „Wyrażam zgodę na przetwarzanie danych osobowych niezbędnych do obsługi wniosku.”
+	•	✅ „Wyrażam zgodę na przesyłanie dokumentów drogą elektroniczną.”
+	•	✅ „Oświadczam, że jestem uprawniony do wysyłania dokumentów w imieniu firmy.”
+	•	link do „Polityki prywatności” (może prowadzić do /privacy-policy albo zewnętrznego linku).
+	•	przycisk „Wyślij dokumenty” jest aktywny tylko, gdy wszystkie zgody są zaznaczone i dodano co najmniej jeden plik.
+
+⸻
+
+4. Logika wysyłki
+	•	Po kliknięciu „Wyślij dokumenty”, aplikacja wyświetla komunikat:
+„Dziękujemy – Twoje dokumenty zostały przesłane. Skontaktujemy się w ciągu 48 godzin.”
+	•	Nie wysyłaj realnych maili – tylko symuluj wysyłkę (demo).
+	•	Wyślij dane POST-em na /api/upload-documents (fake endpoint) z:
+{ advisorId, companyType, selectedDocs, files[], comments, consents }
+	•	Po sukcesie pokaż modal z potwierdzeniem.
+
+⸻
+
+5. Estetyka i język
+	•	Wszystkie teksty, komunikaty i etykiety pozostają w języku polskim.
+	•	Nie zmieniaj stylów, kolorów ani layoutu, który już istnieje.
+
+⸻
+
+Stopka:
+Ma pozostać: © 2025 Imperador Solutions — powered by Imperador Solutions.
